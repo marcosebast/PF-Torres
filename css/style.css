@@ -1,6 +1,225 @@
-* {
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
+  }
+
+body{
+    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 180px);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0 0 0;
+    padding: 24px;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: .8em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.text-body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 150%;
+}
+
+.text-display {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+.font-weight-bold{
+    font-weight: 600;
+}
+
+.font-weight-normal{
+    font-weight: 400;
+}
+
+.font-weight-bold{
+    font-weight: 700;
+}
+
+.font-size-xxlarge{
+    font-size: 48px;
+}
+
+.font-size-xlarge{
+    font-size: 32px;
+}
+
+.font-size-large{
+    font-size: 18px;
+}
+
+.font-size-medium{
+    font-size: 14px;
+}
+
+.font-size-small{
+    font-size: 12px;
+}
+
+.font-size-xsmall{
+    font-size: 10px;
+}
+
+.text-palette-dark{
+    color: #01161e;
+}
+
+.text-palette-lightgrey{
+    color: #598392;
+}
+
+.text-palette-darkgrey{
+    color: #124559;
+}
+
+.text-palette-white{
+    background-color: #eff6e0;
+}
+
+.text-palette-darkwhite{
+    background-color: #aec3b0;
+}
+
+.bg-palette-primary{
+    background-color: #ee6c4d;
+}
+
+.bg-palette-lightgrey{
+    background-color: #598392;
+}
+
+.bg-palette-darkgrey{
+    background-color: #124559;
+}
+
+.bg-palette-white{
+    background-color: #eff6e0
+}
+
+.bg-palette-darkwhite{
+    background-color: #aec3b0
+}
+
+.bg-palette-primary{
+    background-color: #ee6c4d;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.navbar-list{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-item a{
+    padding: 8px 12px;
+    margin: 0 6px;
+    text-decoration: none;
+}
+
+#main-index{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 960px;
+    text-align: right;
+    margin: 24px 20px;
+    padding: 32px;
+    border: 1px solid;
+    border-radius: 16px;
+    background-image: url(../images/Sonos-Era-Family-100-and-300-Gear.webp);
+    background-position: center left;
+    background-size: cover;
+}
+
+#main-index ul{
+    list-style: none;
+}
+
+#main-index ul li{
+    display: flex;
+    padding: 8px 0;
+    flex-direction: row-reverse;
+}
+
+.main-top{
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    margin: 24px 20px;
+    flex-direction: row;
+}
+
+.main-content{
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    margin: 24px 20px;
+    padding: 32px;
+    border-radius: 16px;
+    flex-direction: column;
+}
+
+.p-img{
+    width: 100%;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+
+.contact-form {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    margin: 24px 20px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
 }
