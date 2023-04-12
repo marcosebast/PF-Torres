@@ -11,10 +11,6 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Chivo Mono', monospace;
 }
 
-body{
-    font-family: 'Schibsted Grotesk', sans-serif;
-}
-
 main{
     display: flex;
     flex-direction: column;
@@ -47,13 +43,23 @@ p {
     margin-inline-end: 0px;
 }
 
+.text-uppercase{
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
 .text-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
     line-height: 150%;
 }
 
+.text-headline{
+    font-family: 'Schibsted Grotesk', sans-serif;
+    line-height: 120%;
+}
+
 .text-display {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Chivo Mono', monospace;
     line-height: 100%;
     text-decoration: none;
 }
@@ -191,6 +197,12 @@ p {
     display: flex;
     padding: 8px 0;
     flex-direction: row-reverse;
+}
+
+.hero {
+    height: 100vh;
+    max-height: 640px;
+    background-color: #F9F5EB;
 }
 
 .main-top{
