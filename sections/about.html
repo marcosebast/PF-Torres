@@ -12,33 +12,102 @@
 </head>
 
 <body>
-    <header id="navbar">
-        <h1 class="text-display font-size-large">About</h1>
-        <nav>
-            <ul class="navbar-list">
-                <li class="navbar-item"><a class="text-display text-palette-darkgrey" href="../index.html">Home</a></li>
-                <li class="navbar-item"><a class="text-display text-palette-darkgrey"
-                        href="../sections/contact.html">Contact us</a></li>
-                <li class="navbar-item"><a class="text-display text-palette-darkgrey"
-                        href="../sections/about.html">About us</a></li>
-                <li class="navbar-item"><a class="text-display text-palette-darkgrey"
-                        href="../sections/product.html">Product</a></li>
-                <li class="navbar-item"><a class="text-display text-palette-darkgrey"
-                        href="../sections/checkout.html">Carrito</a></li>
-            </ul>
+    <header>
+        <!-- Logo & Barra de navegación -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-lg">
+                <a class="navbar-brand" href="../index.html">
+                    <svg height="1em" width="5em" viewBox="0 0 514.55 106.88" xmlns="http://www.w3.org/2000/svg"
+                        id="prefix-Layer_1" aria-hidden="true" focusable="false" fill="currentColor">
+                        <polygon
+                            points="278.88 60.37 218.49 4.08 218.49 99.52 236.38 99.52 236.38 46.22 296.77 102.44 296.77 6.75 278.88 6.75 278.88 60.37"
+                            style="fill:currentColor"></polygon>
+                        <path
+                            d="M140.06,3.16a50.1,50.1,0,1,0,50.09,50.1A50.15,50.15,0,0,0,140.06,3.16Zm0,82.19a32.09,32.09,0,1,1,31.77-32.09A32,32,0,0,1,140.06,85.35Z"
+                            style="fill:currentColor"></path>
+                        <path
+                            d="M59.5,54.09c-4.76-3.63-11-6.56-20.33-9.52C21,38.81,21,34.23,21,32c0-5.16,5.76-10.5,15.39-10.5a29.08,29.08,0,0,1,16.75,5.79l1.25.94,14.43-9.75-1.58-1.87A42.19,42.19,0,0,0,36.42,3.18c-9.28,0-17.81,3-24,8.35A27.37,27.37,0,0,0,2.67,32c0,8.22,3.59,15.13,10.67,20.53,4.76,3.63,11,6.56,20.33,9.52,18.14,5.77,18.14,10.34,18.14,12.53,0,5.16-5.76,10.5-15.39,10.5a29,29,0,0,1-16.75-5.79l-1.25-.94L4,88.14,5.57,90a42.19,42.19,0,0,0,30.85,13.47c9.28,0,17.81-3,24-8.35a27.37,27.37,0,0,0,9.73-20.51C70.17,66.4,66.58,59.49,59.5,54.09Z"
+                            style="fill:currentColor"></path>
+                        <path
+                            d="M375.19,3.53a50.1,50.1,0,1,0,50.1,50.09A50.14,50.14,0,0,0,375.19,3.53Zm0,82.18A32.09,32.09,0,1,1,407,53.62,32,32,0,0,1,375.19,85.71Z"
+                            style="fill:currentColor"></path>
+                        <path
+                            d="M455.76,52.79c4.75,3.63,11,6.56,20.33,9.52,18.14,5.76,18.14,10.34,18.14,12.54,0,5.15-5.76,10.49-15.39,10.49a29.08,29.08,0,0,1-16.75-5.79l-1.25-.93-14.43,9.74L448,90.23a42.24,42.24,0,0,0,30.86,13.47c9.28,0,17.8-3,24-8.35a27.37,27.37,0,0,0,9.73-20.5c0-8.23-3.59-15.14-10.68-20.54-4.75-3.63-11-6.56-20.32-9.52C463.45,39,463.45,34.46,463.45,32.26c0-5.16,5.75-10.5,15.39-10.5a29,29,0,0,1,16.75,5.79l1.25.94,14.42-9.75-1.57-1.87A42.23,42.23,0,0,0,478.84,3.4c-9.28,0-17.81,3-24,8.35a27.39,27.39,0,0,0-9.73,20.51C445.09,40.48,448.68,47.39,455.76,52.79Z"
+                            style="fill:currentColor"></path>
+                        <title></title>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-end navbar-list">
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link text-headline text-palette-darkgrey" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link text-headline text-palette-darkgrey"
+                                href="./product.html">Product</a>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link active text-headline text-palette-darkgrey"
+                                href="./about.html">About us</a>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link text-headline text-palette-darkgrey"
+                                href="./contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link text-headline text-palette-darkgrey"
+                                href="./checkout.html">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="main-content bg-palette-white">
-            <p class="text-body font-weight-normal font-size-medium text-palette-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id omnis nihil, consectetur modi ipsam fuga vero quisquam magni aliquid cupiditate cumque quod, ut aspernatur eos iste voluptatem? At, ratione?</p>
-            <p class="text-body font-weight-normal font-size-medium text-palette-dark">Magni ex, cum quo eos dolores repellat distinctio at esse nemo obcaecati, neque quaerat, nulla fugiat possimus numquam voluptatibus laboriosam maiores? Necessitatibus quam aspernatur neque voluptas velit quia excepturi atque.</p>
-            <p class="text-body font-weight-normal font-size-medium text-palette-dark">Optio omnis hic sint unde reprehenderit tempore saepe quas officia. Quaerat explicabo obcaecati harum laborum facilis asperiores quo commodi animi dolore. Et ut amet omnis harum possimus dolor incidunt? Officiis?</p>
-        </section>
+        <div class="container-lg hero-resume mt-4 mb-5">
+            <div class="row">
+                <div class="col-12 col-md-5 hero-resume-card bg-palette-gradient">
+                    <h1>Reinventamos el audio en casa para el presente y el futuro.</h1>
+                    <p class="text-display text-palette-dark mt-3">Sonos te hace más fácil escuchar todo eso que más te gusta (música, podcasts, películas, series, audiolibros, radio y más) y compartirlo a todo volumen con las personas que más te importan.</p>
+                    <p class="text-body font-size-medium text-palette-dark">Magni ex, cum quo eos dolores repellat distinctio at esse nemo obcaecati, neque quaerat, nulla fugiat possimus numquam voluptatibus laboriosam maiores? Necessitatibus quam aspernatur neque voluptas velit quia excepturi atque.</p>
+                    <p class="text-body font-size-medium text-palette-dark">Optio omnis hic sint unde reprehenderit tempore saepe quas officia. Quaerat explicabo obcaecati harum laborum facilis asperiores quo commodi animi dolore. Et ut amet omnis harum possimus dolor incidunt? Officiis?</p>
+                </div>
+                <div class="col-12 col-md-7 hero-about-img"></div>
+            </div>
+        </div>
+        <div class="container-lg">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="card p-5 card-about bg-palette-white">
+                        <h3>Más de 50 servicios de streaming</h3>
+                        <p>Una plataforma que abarca todo lo que más te gusta escuchar.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card p-5 card-about bg-palette-white">
+                        <h3>Más de 2000 patentes</h3>
+                        <p>Una plataforma que abarca todo lo que más te gusta escuchar.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card p-5 card-about bg-palette-white">
+                        <h3>Más de 60 países</h3>
+                        <p>Desde Singapur hasta Luxemburgo y desde Lahore hasta Buenos Aires.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="bg-palette-darkwhite">
+    <footer class="container-lg">
         <p class="text-palette-darkgrey text-body font-size-small">Comision 39340 &copy;</p>
-        <a class="text-body font-size-small text-palette-darkgrey" href="./about.html#navbar">Volver arriba</a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
