@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Schibsted+Grotesk:wght@400;700;900&display=swap');
 
 *, *:before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: 'Schibsted Grotesk', sans-serif;
-}
-
-ul,li{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .material-symbols-rounded {
@@ -19,6 +13,66 @@ ul,li{
     'GRAD' 200,
     'opsz' 48
 }
+
+.navbar-brand, .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-expand-lg .navbar-nav .sonos-link, 
+.sonos-link{
+    font-family: 'Chivo Mono';
+    margin-top: .0;
+    margin-bottom: .0;
+    padding: 1.2rem 1.2rem 1rem 1.2rem;
+    position: relative;
+    border-radius: 4px;
+}
+
+.navbar-expand-lg .navbar-nav .sonos-link:hover, 
+.sonos-link:hover{
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding: .8rem 1.2rem .6rem 1.2rem;
+    background-color: rgb(0 0 0 / 7%);
+}
+
+.navbar-nav .sonos-link.active, 
+.navbar-nav .sonos-link.show{
+    color: #033FFF;
+}
+
+.navbar-nav .sonos-link.active:hover, .navbar-nav .sonos-link.show:hover{
+    color: black;
+}
+
+.sonos-link.active:before{
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 2px;
+    margin-bottom: 0rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    width   : calc(100% - 2.4rem);
+    border-bottom:2px solid #033FFf;
+    transition: none;
+  }
+
+  .sonos-link.active:hover::before{
+    content : "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    margin-bottom: -.4rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    width   : calc(100% - 2.4rem);
+    border-bottom:2px solid black;
+    transition: none;
+  }
 
 .icon-xl{
     font-size: 2.25rem;
@@ -114,27 +168,27 @@ p {
 }
 
 .font-size-xxlarge{
-    font-size: 48px;
+    font-size: 1.5rem;
 }
 
 .font-size-xlarge{
-    font-size: 32px;
+    font-size: 1.25rem;
 }
 
 .font-size-large{
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 
 .font-size-medium{
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .font-size-small{
-    font-size: 12px;
+    font-size: .85rem;
 }
 
 .font-size-xsmall{
-    font-size: 10px;
+    font-size: .75rem;
 }
 
 .text-palette-dark{
@@ -174,11 +228,11 @@ p {
 }
 
 .bg-palette-white{
-    background-color: #EFF5F5;
+    background-color: #fafafa;
 }
 
 .bg-palette-darkwhite{
-    background-color: #aec3b0
+    background-color: #EFF5F5;
 }
 
 .bg-palette-primary{
@@ -269,43 +323,37 @@ p {
     margin-bottom: 1rem;
 }
 
-.hero-resume > .row{
-    width: 100%;
-    margin: 0;
+.hero-resume {
     border-radius: 24px;
     overflow: hidden;
 }
 
-.hero-resume-specs.row {
-    width: 100%;
+.hero-resume .hero-resume-specs{
     margin: 0;
+    padding: 0;
 }
 
-.hero-resume .row .spec-line{
+.hero-resume .hero-resume-specs .spec-line{
     padding: 12px 0;
 }
 
-.hero-resume .row .spec-line .body-display{
+.hero-resume .hero-resume-specs .spec-line .body-display{
     margin-left: 8px;
 }
 
 .hero-resume-img{
     height: 100vh;
     min-height: 640px;
-    max-height: 770px;
+    max-height: 720px;
     background-image: url(../images/era-300-credenza3.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.hero-resume-card {
-    padding: 48px;
-}
-
 .hero-about-img{
     height: auto;
     min-height: 520px;
-    max-height: 900px;
+    max-height: 720px;
     background-image: url(../images/sub-mini-living-room-family.jpg);
     background-size: cover;
     background-position: center;
@@ -333,16 +381,6 @@ p {
     width: 100%;
     border-radius: 8px;
     margin: 24px 0;
-}
-
-.contact-form {
-    display: flex;
-    width: 100%;
-    max-width: 960px;
-    margin: 24px 20px;
-    padding: 32px;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .btn-xl{
@@ -492,18 +530,16 @@ p {
     background-image: url(../images/era-puzzle.jpg);
     background-size: cover;
     background-position: center;
-    padding: 32px;
-    margin: 64px 0;
 }
 
 .product-display-card{
-    padding: 24px;
     border-radius: 12px;
     box-shadow: 0 20px 32px 0 rgba(0,0,0,0.24);
 }
 
 .product-display .specs-list{
     margin: 0 0 16px 0;
+    padding: 0;
 }
 
 .specs-list li{
@@ -519,10 +555,6 @@ p {
     border: none;
     border-radius: 24px;
     overflow: hidden;
-}
-
-.card-content-box {
-    padding: 12px 24px 24px 24px;
 }
 
 .card-img-box {
@@ -559,13 +591,13 @@ p {
     overflow: hidden;
 }
 
+.cart-img{
+    width: 166px;
+}
+
 @media (max-width: 1024px) {
     .title-display {
         font-size: 6rem;
-    }
-
-    .product-display{
-        margin: 32px 0;
     }
 }
 
@@ -587,8 +619,6 @@ p {
         overflow: hidden;
         border-radius: 24px;
         background-image: none;
-        padding: 0;
-        margin: 32px 0;
     }
 
     .product-display-img{
@@ -600,7 +630,6 @@ p {
     }
 
     .product-display-card{
-        padding: 24px;
         border-radius: 0;
     }
 }
