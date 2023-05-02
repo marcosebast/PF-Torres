@@ -1,0 +1,30 @@
+.card-product {
+    background-color: $light-grey;
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    .card-img-box {
+        display: flex;
+        padding: 3rem 3rem 1rem 3rem;
+        background-image: linear-gradient(to top, #e6e9f0 0%, $light-grey 100%);
+        overflow: hidden;
+        height: calc(270px + 4rem);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        .card-img-top {
+            display: block;
+            max-width: 270px;
+            max-height: 270px;
+            width: auto;
+            height: auto;
+        }
+        .card-tag {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            backdrop-filter: blur(3px);
+        }
+    }
+}

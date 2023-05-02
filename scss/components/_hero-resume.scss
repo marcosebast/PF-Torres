@@ -1,0 +1,21 @@
+.hero-resume {
+    border-radius: 24px;
+    overflow: hidden;
+    .hero-resume-img {
+        height: 100vh;
+        min-height: 640px;
+        max-height: 720px;
+        background-image: url(../images/era-300-credenza3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero-resume {
+        .hero-resume-img {
+            min-height: 320px;
+            max-height: 420px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.product-display {
+    overflow: hidden;
+    border-radius: 24px;
+    background-image: url(../images/era-puzzle.jpg);
+    background-size: cover;
+    background-position: center;
+    .product-display-card {
+        border-radius: 12px;
+        box-shadow: 0 20px 32px 0 rgba(0, 0, 0, 0.24);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-display {
+        overflow: hidden;
+        border-radius: 24px;
+        background-image: none;
+        .product-display-img {
+            background-image: url(../images/era-100-bookshelf.jpg);
+            background-size: cover;
+            background-position: center right;
+            min-height: 356px;
+            height: auto;
+        }
+    
+        .product-display-card {
+            border-radius: 0;
+        }
+    }
+
+}

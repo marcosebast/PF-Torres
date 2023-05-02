@@ -1,0 +1,10 @@
+.aside-cart {
+    border-left: 1px solid;
+    border-color: $grey;
+}
+
+@media (max-width: 768px) {
+    .aside-cart {
+        border-left: none;
+    }
+}

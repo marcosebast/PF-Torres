@@ -1,0 +1,12 @@
+@import '../utilities/palette';
+
+.tag-box {
+    display: inline-block;
+    font-size: .9rem;
+    font-family: 'Chivo Mono';
+    margin-bottom: 8px;
+    background: $light-primary;
+    padding: 1px 4px 0 5px;
+    border-radius: 2px;
+    color: $primary;
+}

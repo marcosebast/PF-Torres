@@ -1,0 +1,13 @@
+
+.hero-about{
+    border-radius: 24px;
+    overflow: hidden;
+    .hero-about-img {
+        height: auto;
+        min-height: 520px;
+        max-height: 720px;
+        background-image: url(../images/sub-mini-living-room-family.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
