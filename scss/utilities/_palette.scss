@@ -1,0 +1,59 @@
+$dark: #01161e;
+$dark-grey: rgba(33, 37, 41, 0.8);
+$grey: rgba(0, 0, 0, 0.18);
+$light-grey: #e6e9f0;
+$white: #fafafa;
+$dark-white: #ECF2FF;
+$light-white: #F1F6F9;
+$primary: #033FFF;
+$light-primary: rgba(3, 63, 255, 0.15);
+$gradient-cosmic: linear-gradient(35deg, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+
+
+.text-palette-dark {
+    color: $dark;
+}
+
+.text-palette-lightgrey {
+    color: $light-grey;
+}
+
+.text-palette-darkgrey {
+    color: $dark-grey;
+}
+
+.text-palette-white {
+    color: $white;
+}
+
+.text-palette-darkwhite {
+    color: $dark-white;
+}
+
+.bg-palette-gradient {
+    background-image: $gradient-cosmic;
+}
+
+.bg-palette-primary {
+    background-color: $primary;
+}
+
+.bg-palette-lightgrey {
+    background-color: $light-grey;
+}
+
+.bg-palette-darkgrey {
+    background-color: $dark-grey;
+}
+
+.bg-palette-white {
+    background-color: $white;
+}
+
+.bg-palette-darkwhite {
+    background-color: $dark-white;
+}
+
+.bg-palette-primary {
+    background-color: $primary;
+}

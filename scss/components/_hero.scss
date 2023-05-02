@@ -1,0 +1,124 @@
+.hero {
+    height: 100vh;
+    min-height: 640px;
+    max-height: 770px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.70) 0%, rgba(0, 0, 0, 0.70) 120%) #5c5c5c;
+    background-blend-mode: multiply, multiply;
+    overflow: hidden;
+
+    .container {
+        padding-top: 4rem;
+        padding-bottom: 24px;
+
+        .hero-btn {
+            font-size: 1.5rem;
+            padding: 1.25rem 2.25rem 1.25rem 3rem;
+            gap: 4px;
+            transition: all .25s ease-in-out;
+
+            &:hover {
+                background-color: #c3cfe2;
+                box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.36);
+            }
+        }
+
+        .title-display {
+            font-family: 'Schibsted Grotesk', sans-serif;
+            font-size: 7rem;
+            font-weight: 900;
+            line-height: 80%;
+            letter-spacing: -.15rem;
+            background: -webkit-linear-gradient(270deg, #FFFBF5 0%, #c3cfe2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle-display {
+            font-family: 'Chivo Mono';
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: .05rem;
+        }
+
+        .text-display {
+            font-size: 1.5rem;
+            font-family: 'Schibsted Grotesk', sans-serif;
+            line-height: 120%;
+            text-decoration: none;
+        }
+    }
+
+    .hero-img {
+        height: 100vh;
+        max-height: 420px;
+        background-image: url(../images/sonos-era-300.webp);
+        background-size: 720px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        .container {
+            .title-display {
+                font-size: 6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        .container {
+            .title-display {
+                font-size: 5rem;
+            }
+
+            .subtitle-display {
+                font-size: 1.5rem;
+            }
+
+            .hero-btn {
+                font-size: 1.25rem;
+
+                .icon-xl {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .hero {
+        .container {
+            .title-display {
+                font-size: 3.5rem;
+            }
+
+            .subtitle-display {
+                font-size: 1rem;
+            }
+
+            .hero-btn {
+                font-size: 1rem;
+                padding: 1rem 1.5rem 1rem 2rem;
+
+                .icon-xl {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        .container {
+            .title-display {
+                font-size: 3rem;
+            }
+        }
+    }
+}

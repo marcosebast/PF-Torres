@@ -1,0 +1,45 @@
+.navbar-expand-lg .navbar-nav .sonos-link,
+.sonos-link {
+    font-family: 'Chivo Mono';
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1.2rem 1.2rem 1rem 1.2rem;
+    position: relative;
+    border-radius: 4px;
+
+    &:hover {
+        margin-top: .4rem;
+        margin-bottom: .4rem;
+        padding: .8rem 1.2rem .6rem 1.2rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.navbar .container-lg .sonos-link.active,
+.navbar-nav .sonos-link.active,
+.navbar-nav .sonos-link.show {
+    color: #033FFF;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        margin-bottom: 0rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+        width: calc(100% - 2.4rem);
+        border-bottom: 2px solid #033FFf;
+        transition: none;
+    }
+
+    &:hover {
+        color: black;
+
+        &:before {
+            margin-bottom: -.4rem;
+            border-bottom: 2px solid black;
+        }
+    }
+}
