@@ -78,12 +78,17 @@
                     method="get" enctype="text/plain">
                     <h1 class="mb-4">Ponte en contacto con nosotros</h1>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo eletrónico" >
+                        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" name="name">
+                        <label for="name">Nombre</label>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo eletrónico" name="email" >
                         <label for="email">Correo electrónico</label>
                     </div>
                     <br>
                     <div class="form-floating">
-                        <select class="form-select" id="country">
+                        <select class="form-select" id="country" name="country">
                             <option selected>Selecciona un país</option>
                             <option value="Argentina">Argentina</option>
                             <option value="Brasil">Brasil</option>
@@ -96,7 +101,7 @@
                     </div>
                     <br>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Deja aquí tu mensaje" id="floatingTextarea2" style="height: 150px"></textarea>
+                        <textarea class="form-control" placeholder="Deja aquí tu mensaje" id="floatingTextarea2" name="message" style="height: 150px"></textarea>
                         <label for="floatingTextarea2">Mensaje</label>
                     </div>
                     <div class="d-flex mt-4 font-size-small">Género</div>
